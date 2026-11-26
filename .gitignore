@@ -1,0 +1,35 @@
+# Python environments
+.venv/
+.venv310/
+venv/
+dual_env/
+animate_env310/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Model checkpoints and generated outputs
+checkpoints/
+outputs/
+runs/
+*.pth
+*.ckpt
+
+# Temporary files
+*.tmp
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example

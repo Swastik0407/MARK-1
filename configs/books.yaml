@@ -1,0 +1,28 @@
+
+seed: 42
+
+training:
+  epochs: 200
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  gradient_clip: 1.0
+  log_interval: 10
+
+model:
+  input_dim: 21
+  structural_dim: 3
+  hidden_size: 64
+  ffn_size: 128
+  num_heads: 4
+  num_layers: 2
+  decoder_hidden_size: 32
+  dropout: 0.1
+
+loss:
+  lambda_attribute: 1.0
+  lambda_structure: 1.0
+
+output:
+  checkpoint_dir: outputs/checkpoints
+  log_dir: outputs/logs
+  history_file: outputs/training_history.csv
